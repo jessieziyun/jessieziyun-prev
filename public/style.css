@@ -1,0 +1,282 @@
+@import url("https://use.typekit.net/apc2ueg.css");
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow: hidden;
+    position: absolute;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.page-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.content-container {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 150px;
+}
+
+.line {
+    z-index: 1;
+    height: 3px;
+    background-color: black;
+    mix-blend-mode: difference;
+    margin-bottom: 10px;
+}
+
+.line-white {
+    z-index: 1;
+    height: 3px;
+    background-color: white;
+    mix-blend-mode: difference;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 0;
+    font-size: 90px;
+    font-weight: normal;
+    line-height: 100px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 32px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+h4 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+small {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 30px;
+}
+
+.role {
+    margin-top: 10px;
+    margin-bottom: 20px;;
+}
+
+.project-info .text-left p{
+    font-style: italic;
+}
+
+h1 a,
+h1 a:visited,
+h4 a,
+h4 a:visited,
+p a,
+p a:visited {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.home h1 a,
+.home h1 a:visited,
+h2 a,
+h2 a:visited {
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    padding-top: 10px;
+}
+
+header.home {
+    z-index: 1;
+    position: fixed;
+    mix-blend-mode: difference;
+}
+
+footer {
+    margin-top: 10px;
+    height: 70px;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.projects {
+    z-index: 2;
+    position: fixed;
+    color: white;
+    mix-blend-mode: difference;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    width: calc(100vw - 40px);
+    bottom: 0;
+}
+
+.cover-container {
+    display: block;
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+img.contain {
+    display: none;
+    position: absolute;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+img.centre {
+    position: relative;
+    object-fit: contain;
+    object-position: 50% 50%;
+    width: 100%;
+    object-position: 50% 50%;
+    margin: 10px 0px;
+}
+
+img.half {
+    width: calc(50% - 10px);
+    margin: 10px 0px;
+}
+
+.test {
+    text-align: center;
+}
+
+.player {
+    position: relative;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.padded {
+    margin: 40px 0px;
+}
+
+.flex-container-0-2 {
+    float: right;
+    width: calc(100%/3 * 2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact {
+    width: calc(100%/ 3 - 40px);
+    margin-top: 25px;
+}
+
+#about {
+    width: calc(100%/3 * 2);
+    margin-top: 25px;
+}
+
+.flex-thirds {
+    width: calc(100% / 2 - 20px);
+}
+
+.project-info:after {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    clear: both;
+    content: "";
+    display: block;
+    margin-bottom: 40px;
+}
+
+.text-left {
+    width: calc(100%/4);
+    float: left;
+}
+
+.text-right {
+    width: calc(100% / 3 * 2);
+    float: right;
+}
+
+.left-wide {
+    width: calc(100%/3 * 2 - 50px);
+}
