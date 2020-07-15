@@ -4,39 +4,40 @@ const http = require("http");
 
 const app = express();
 const port = process.env.PORT || 3000;
+const base = process.env.BASE || "/";
 const server = http.createServer(app);
 
-app.use(process.env.BASE, express.static("public"));
+app.use(base, express.static("public"));
 
-app.get(process.env.BASE, (request, response) => {
+app.get(base, (request, response) => {
     response.sendFile(__dirname + "/views/index.html");
 });
 
-app.get(process.env.BASE + 'about', (request, response) => {
+app.get(base + 'about', (request, response) => {
     response.sendFile(__dirname + "/views/about.html");
 });
 
-app.get(process.env.BASE + 'utopia', (request, response) => {
+app.get(base + 'utopia', (request, response) => {
     response.sendFile(__dirname + "/views/projects/utopia.html");
 });
 
-app.get(process.env.BASE + 'speech-bubbles', (request, response) => {
+app.get(base + 'speech-bubbles', (request, response) => {
     response.sendFile(__dirname + "/views/projects/speech-bubbles.html");
 });
 
-app.get(process.env.BASE + 'mars', (request, response) => {
+app.get(base + 'mars', (request, response) => {
     response.sendFile(__dirname + "/views/projects/mars.html");
 });
 
-app.get(process.env.BASE + 'advertising-bot', (request, response) => {
+app.get(base + 'advertising-bot', (request, response) => {
     response.sendFile(__dirname + "/views/projects/advertising-bot.html");
 });
 
-app.get(process.env.BASE + 'sonance', (request, response) => {
+app.get(base + 'sonance', (request, response) => {
     response.sendFile(__dirname + "/views/projects/sonance.html");
 });
 
-app.get(process.env.BASE + 'bbc-habitat', (request, response) => {
+app.get(base + 'bbc-habitat', (request, response) => {
     response.sendFile(__dirname + "/views/projects/bbc-habitat.html");
 });
 
