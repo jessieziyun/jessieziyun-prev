@@ -190,7 +190,7 @@ nav:after {
     right: 0;
 }
 
-img.contain {
+.contain {
     display: none;
     position: absolute;
     object-fit: cover;
@@ -199,7 +199,7 @@ img.contain {
     height: 100%;
 }
 
-img.centre {
+.centre {
     position: relative;
     object-fit: contain;
     object-position: 50% 50%;
@@ -208,7 +208,7 @@ img.centre {
     margin: 10px 0px;
 }
 
-img.half {
+.half {
     width: calc(50% - 10px);
     margin: 10px 0px;
 }
