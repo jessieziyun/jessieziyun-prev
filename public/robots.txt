@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Sitemap: https://jessieziyun.com/sitemap.xml
+
+User-agent: CuteStat
+Disallow: /
