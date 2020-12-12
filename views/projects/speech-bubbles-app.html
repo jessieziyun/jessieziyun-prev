@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Speech Bubbles</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+
+  <meta name="title" content="Speech Bubbles" />
+  <meta name="description"
+      content="How can you visually communicate something that has no visual form?  Speech Bubbles is an attempt to make sound physical." />
+  <meta property="og:url" content="https://jessieziyun.com/speech-bubbles/app";>
+  <meta property="og:title" content="Speech Bubbles";>
+  <meta property="og:description" content="How can you visually communicate something that has no visual form?  Speech Bubbles is an attempt to make sound physical.";>
+  <meta property="og:image" content="https://www.jessieziyun.com/assets/projects/speech-bubbles/speech-bubbles.jpg";>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/projects/speech-bubbles/style.css" />
+  <script type="module" src="/projects/speech-bubbles/index.js" defer></script>
+</head>
+
+<body>
+  <video id="video" autoplay style="display:none"></video>
+  <div id="landing-page"></div>
+  <div id="landing-bg"></div>
+  <div id="loading-screen"></div>
+  <div id="loading-bg"></div>
+  <div id="scene-container"></div>
+</body>
+
+</html>

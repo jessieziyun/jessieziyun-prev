@@ -25,6 +25,10 @@ app.get(base + 'speech-bubbles', (request, response) => {
     response.sendFile(__dirname + "/views/projects/speech-bubbles.html");
 });
 
+app.get(base + 'speech-bubbles/app', (request, response) => {
+    response.sendFile(__dirname + "/views/projects/speech-bubbles-app.html");
+});
+
 app.get(base + 'mars', (request, response) => {
     response.sendFile(__dirname + "/views/projects/mars.html");
 });
